@@ -1,0 +1,51 @@
+id,object,name,description,active,livemode
+prod_starter001,product,Starter,Great for individuals and small teams,true,false
+prod_pro001,product,Pro,Advanced features for growing teams,true,false
+prod_enterprise001,product,Enterprise,Full suite for large organizations,true,false
+prod_basic001,product,Basic,Essential tools to get started,true,false
+prod_growth001,product,Growth,Scale your business with powerful integrations,true,false
+prod_team001,product,Team,Collaborate seamlessly across your organization,true,false
+prod_business001,product,Business,Everything you need to run your business,true,false
+prod_plus001,product,Plus,More power for ambitious projects,true,false
+prod_essentials001,product,Essentials,Core features at an affordable price,true,false
+prod_premium001,product,Premium,Top-tier features with priority support,true,false
+prod_freelance001,product,Freelancer,Built for independent professionals,true,false
+prod_agency001,product,Agency,Manage multiple clients with ease,true,false
+prod_nonprofit001,product,Nonprofit,Discounted plan for nonprofit organizations,true,false
+prod_student001,product,Student,Learn and build without breaking the bank,true,false
+prod_developer001,product,Developer,Full API access and developer tools,true,false
+prod_analytics001,product,Analytics Add-on,Deep insights into your data,true,false
+prod_storage001,product,Extra Storage,Expand your storage capacity by 100GB,true,false
+prod_support001,product,Priority Support,24/7 dedicated support channel,true,false
+prod_sso001,product,SSO Add-on,Single sign-on for your entire organization,true,false
+prod_audit001,product,Audit Logs,Full audit trail for compliance needs,true,false
+prod_api001,product,API Access,Programmatic access to all platform features,true,false
+prod_custom001,product,Custom Domain,Host on your own branded domain,true,false
+prod_white001,product,White Label,Remove all branding and use your own,true,false
+prod_onboard001,product,Onboarding Package,Guided setup with a dedicated specialist,true,false
+prod_training001,product,Training Sessions,Live training workshops for your team,true,false
+prod_migration001,product,Data Migration,Professional data import and migration service,true,false
+prod_integration001,product,Integrations Pack,Connect with 50+ third-party tools,true,false
+prod_security001,product,Security Suite,Advanced threat detection and compliance tools,true,false
+prod_backup001,product,Automated Backups,Daily encrypted backups with 30-day retention,true,false
+prod_uptime001,product,Uptime Monitoring,Real-time alerts and status page for your services,true,false
+prod_cdn001,product,CDN Boost,Global content delivery for faster load times,true,false
+prod_email001,product,Transactional Email,Reliable email delivery up to 100k messages/month,true,false
+prod_sms001,product,SMS Notifications,Send SMS alerts and reminders to your users,true,false
+prod_video001,product,Video Hosting,Stream and manage video content at scale,true,false
+prod_forms001,product,Forms & Surveys,Create unlimited forms and collect responses,true,false
+prod_crm001,product,CRM Integration,Sync contacts and deals with your CRM,true,false
+prod_workflow001,product,Workflow Automation,Build no-code automations between your tools,true,false
+prod_approvals001,product,Approvals,Multi-step approval workflows for your team,true,false
+prod_invoicing001,product,Invoicing,Create and send branded invoices in seconds,true,false
+prod_expenses001,product,Expense Tracking,Log and categorize business expenses,true,false
+prod_reports001,product,Custom Reports,Build and schedule custom data reports,true,false
+prod_ai001,product,AI Assistant,Intelligent suggestions powered by machine learning,true,false
+prod_translate001,product,Translations,Auto-translate content into 30+ languages,true,false
+prod_gdpr001,product,GDPR Toolkit,Consent management and data privacy controls,true,false
+prod_hipaa001,product,HIPAA Compliance Pack,Tools and controls for healthcare data requirements,true,false
+prod_seats001,product,Extra Seats (5-pack),Add five additional user seats to any plan,true,false
+prod_concierge001,product,Concierge Setup,Hands-on setup and configuration by our experts,true,false
+prod_legacy001,product,Legacy (Deprecated),Previous generation plan — no longer available,false,false
+prod_beta001,product,Beta Program,Early access to upcoming features,true,false
+prod_enterprise_plus001,product,Enterprise Plus,Unlimited everything with dedicated infrastructure,true,false

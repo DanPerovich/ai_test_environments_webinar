@@ -1,0 +1,25 @@
+{
+  "name": "stripe-checkout-service",
+  "version": "1.0.0",
+  "description": "AI-generated checkout microservice backed by Stripe",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest",
+    "test:mock1": "DOTENV_FILE=.env.mock1 jest",
+    "test:mock2": "DOTENV_FILE=.env.mock2 jest",
+    "test:live": "DOTENV_FILE=.env.live jest",
+    "seed": "node scripts/seed-stripe-products.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "stripe": "^16.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
