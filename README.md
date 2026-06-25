@@ -35,6 +35,10 @@ application code is unmodified.
 | `.env.mock2` | `stripe-api-main` | Recording, validation, enhancement |
 | `.env.live` | — | Real Stripe test sandbox |
 
+## Demo
+
+The full demo flow and talk track are in [`stripe-checkout-service/demo/DEMO-RUNBOOK.md`](stripe-checkout-service/demo/DEMO-RUNBOOK.md).
+
 ## Project Structure
 
 ```
