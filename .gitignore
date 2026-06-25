@@ -1,0 +1,10 @@
+# Private demo helper — contains WMC API key
+reset-mock-apis.sh
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Environment files with real credentials
+stripe-checkout-service/.env.live
+stripe-checkout-service/.env.mock2
