@@ -2,7 +2,6 @@
 
 **Total duration:** 12–15 minutes  
 
-
 Open in Cursor before starting: `src/stripe-client.js`, `tests/products.test.js`,
 `tests/checkout.test.js`. These are the files shown to the audience.
 
@@ -82,8 +81,13 @@ guardrail that prevents it from drifting out of contract."
 
 **Step 1: Enable OpenAPI validation in WMC UI**
 
-In Mock API 2 settings, navigate to API Governance / OpenAPI. Upload  
-`stripe-openapi-min.json`. Enable response validation.
+Ask AI to:
+
+```bash
+push @stripe-openapi-min.json into mock API gdd07
+```
+
+
 
 **Step 2: Re-run the baseline tests**
 
