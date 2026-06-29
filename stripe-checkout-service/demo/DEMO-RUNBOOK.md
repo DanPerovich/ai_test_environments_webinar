@@ -27,14 +27,17 @@ Navigate briefly through these three files — 5 seconds each:
 - `src/products-service.js` — two functions, wraps the SDK
 - `tests/products.test.js` — tests already exist
 
+
+
 **Step 2: Generate stubs in WireMock Cloud UI**
 
-Switch to the WireMock Cloud browser tab (Mock API 1 — `stripe-api-openapi`).
-Import the Stripe OpenAPI spec (`stripe-openapi.json`).
-WMC generates stubs for all Stripe endpoints instantly.
+Ask AI to generate the stubs by importing the OpenAPI spec for the real service.
+
+`import @stripe-openapi-min.json in mockapi id 911q8`
+
 Show the stub list briefly.
 
-`import @stripe-openapi-slim.json in mockapi id 911q8`
+
 
 **Step 3: Run tests against Mock API 1**
 
@@ -57,28 +60,16 @@ fix that."
 **Narrative:** "Instead of the spec alone, let's anchor the mock to real Stripe
 behavior — by recording actual traffic from the sandbox."
 
-**Step 1: Start recording in WireMock Cloud UI**
-
-Switch to Mock API 2 (`stripe-api-main`) in the browser.
-Navigate to Record. Click **Start Recording**.
-The mock is now a live proxy to `api.stripe.com`.
-
-**Step 2: Run the tests through the proxy**
+**Step 1: Ask AI to record the stubs into a different MockAPI using the test suite**
 
 ```bash
-npm run test:mock2
+using `npm run test:mock2` record stubs from the live stripe api `api.stripe.com`
+into mockapi id gdd07
 ```
 
-Traffic flows: Jest → Stripe SDK → WireMock Cloud (proxy) → real Stripe sandbox.
-WMC captures each request/response pair as a stub.
 
-**Step 3: Stop recording**
 
-Click **Stop Recording** in WMC UI.
-Show the captured stubs list — real Stripe responses, grounded in actual API
-behavior.
-
-**Step 4: Run the tests again against the recorded stubs**
+**Step 2: Run the tests again against the recorded stubs**
 
 ```bash
 npm run test:mock2
@@ -97,9 +88,10 @@ guardrail that prevents it from drifting out of contract."
 
 **Step 1: Enable OpenAPI validation in WMC UI**
 
-In Mock API 2 settings, navigate to API Governance / OpenAPI.
-Upload `stripe-openapi.json`.
-Enable response validation.
+In Mock API 2 settings, navigate to API Governance / OpenAPI. Upload   
+`stripe-openapi-min.json`. Enable response validation.
+
+
 
 **Step 2: Re-run the baseline tests**
 
@@ -112,10 +104,14 @@ the official Stripe spec. If a future update to the mock introduces a field
 type mismatch or drops a required property, this validation catches it before
 it ever causes a production bug. AI generates fast — the spec keeps it honest."
 
+
+
 **Step 3 (optional): Force Validation Error**
 
 Edit the `Get /v1/products` responde body so that the first `created` attribute
 value is a string instead of a int/long and save the stub.
+
+
 
 **Step 4 (optional): Re-run the baseline tests**
 
@@ -125,6 +121,8 @@ npm run test:mock2
 
 **What to say:** "WireMock Clouds VALIDATION feature in HARD mode causes our
 tests to fail due to a response-side contract validation error.
+
+
 
 **Step 5 (optional): Fix the broken stub**
 
@@ -150,6 +148,8 @@ The skill will:
 - Enhance the `GET /v1/products` stub to serve responses templated from
 the CSV rows
 
+
+
 **Step 2: Run the full test suite**
 
 ```bash
@@ -163,6 +163,8 @@ mock, and now it serves responses from real data — deterministically, without
 touching production Stripe. But there is still something wrong with the
 responses the mock API is sending back."
 
+
+
 **Step 3: Ask AI to help triage and fix the mock API**
 
 In Claude Code, invoke:  
@@ -171,6 +173,8 @@ In Claude Code, invoke:
 Expected result: AI fixes dynamic response templating and matching criteria.
 
 **What to say:** "Triaging mock APIs is easy and quick with the help of AI."
+
+
 
 **Step 4: Run the full test suite**
 
