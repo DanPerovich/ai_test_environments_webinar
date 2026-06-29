@@ -1,7 +1,7 @@
 # Demo Runbook — AI Test Environments Webinar
 
 **Total duration:** 12–15 minutes  
-**Dan runs all commands. Tom narrates from the slides.**
+
 
 Open in Cursor before starting: `src/stripe-client.js`, `tests/products.test.js`,
 `tests/checkout.test.js`. These are the files shown to the audience.
@@ -144,8 +144,6 @@ Expected result: `getPricesForProduct()` tests fail.
 
 **What to say:** "One skill invocation. A CSV data source was wired into the mock, and now it serves responses from real data — deterministically, without touching production Stripe."
 
-
-
 **(Optional) Step 3: Ask AI to help triage and fix the mock API if there are failures**
 
 **Narrative: "**But there is still something wrong with the responses the mock API is sending back."
@@ -156,8 +154,6 @@ In Claude Code, invoke:
 Expected result: AI fixes dynamic response templating and matching criteria.
 
 **What to say:** "Triaging mock APIs is easy and quick with the help of AI."
-
-
 
 **(Optional) Step 4: Run the full test suite**
 
