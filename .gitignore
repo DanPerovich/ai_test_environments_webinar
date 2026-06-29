@@ -1,5 +1,6 @@
 # Private demo helper — contains WMC API key
 reset-mock-apis.sh
+stripe-checkout-demo-spec.md
 
 # Node
 node_modules/
