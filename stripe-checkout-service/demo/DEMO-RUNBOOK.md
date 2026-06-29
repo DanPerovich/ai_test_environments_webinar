@@ -130,7 +130,10 @@ from a real data source. A WireMock skill can do this."
 **Step 1: Invoke the skill in Claude Code (Terminal B)**
 
 Open Claude Code. Invoke:  
-`enhance the Get v1 products stubs in mockapi id gdd07 to use a data source based on @stripe-checkout-service/demo/products.csv`
+```bash
+enhance the Get v1 products stubs in mockapi id gdd07 to use a data source based on @stripe-checkout-service/demo/products.csv
+ensure `npm run test:mock2` passes
+```
 
 The skill will:
 
